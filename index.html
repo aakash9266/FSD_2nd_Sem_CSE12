@@ -1,122 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Online Feedback Form</title>
     <style>
-       
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
 
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+      }
 
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
-}
+      .container {
+        width: 400px;
+        background-color: white;
+        margin: 30px auto;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
 
+      .container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #444;
+      }
 
-.container {
-    width: 400px;
-    background-color: white;
-    margin: 30px auto;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
 
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
 
-.container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #444;
-}
+      textarea {
+        height: 80px;
+        resize: none;
+      }
 
+      .btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
-label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-
-textarea {
-    height: 80px;
-    resize: none;
-}
-
-
-.btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #45a049;
-}
-
+      .btn:hover {
+        background-color: #45a049;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Class-Test</h1>
 
-<div class="container">
-    <h2>Online Feedback Form</h2>
+    <div class="container">
+      <h2>Online Feedback Form</h2>
 
-    <form>
+      <form>
         <label for="name">Name:</label>
-        <input id="name" type="text" placeholder="Enter your name" required>
-        <br>
-        <br>
+        <input id="name" type="text" placeholder="Enter your name" required />
+        <br />
+        <br />
 
         <label for="email">Email:</label>
-        <input id="email" type="email" placeholder="Enter your email" required>
-        <br>
-        <br>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br />
+        <br />
 
         <label>Rating:</label>
         <select required>
-            <option value="" selected disabled>Select Rating</option>
-            <option>Excellent</option>
-            <option>Good</option>
-            <option>Average</option>
-            <option>Poor</option>
+          <option value="">Select Rating</option>
+          <option>Excellent</option>
+          <option>Good</option>
+          <option>Average</option>
+          <option>Poor</option>
         </select>
-        <br>
-        <br>
+        <br />
+        <br />
 
         <label>Feedback:</label>
         <textarea placeholder="Write your feedback here..." required></textarea>
-        <br>
-        <br>
-        
+        <br />
+        <br />
 
         <button class="btn" type="submit">Submit Feedback</button>
-    </form>
-
-</div>
-
-
-</body>
+      </form>
+    </div>
+  </body>
 </html>
